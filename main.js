@@ -14,8 +14,8 @@ let windowTwo
 
 function createWindows () {
   // Create the browser windows.
-  windowOne = new BrowserWindow({x: 20, y: 20, width: 300, height: 300, resizable: false})
-  windowTwo = new BrowserWindow({x: 320, y: 20, width: 300, height: 300, resizable: false})
+  windowOne = new BrowserWindow({x: 20, y: 20, width: 600, height: 600, resizable: false})
+  windowTwo = new BrowserWindow({x: 620, y: 20, width: 600, height: 600, resizable: false})
 
   // and load the index.html of the app.
   windowOne.loadURL(url.format({

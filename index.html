@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%">
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <style type="text/css">
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    #outside {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: red;
+    }
+
+    #inside-1 {
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: green;
+    }
+
+    #inside-2 {
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: orange;
+    }
+
+    #inside-3 {
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        background: white;
+    }
+
+    #my-draggable {
+        -webkit-app-region: drag;
+        background-color: blue;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #drag-span {
+        color: white;
+    }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div id="outside">
+      <div id="inside-1">
+        <div id="inside-2">
+          <div id="inside-3">
+            <div id="my-draggable"><span id="drag-span">Draggable Region</span></div>
+            <!-- All of the Node.js APIs are available in this renderer process. -->
+            We are using Node.js <script>document.write(process.versions.node)</script>,
+            Chromium <script>document.write(process.versions.chrome)</script>,
+            and Electron <script>document.write(process.versions.electron)</script>.
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
