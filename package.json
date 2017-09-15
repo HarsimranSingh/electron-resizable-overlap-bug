@@ -1,0 +1,12 @@
+{
+  "name": "electron-resizable-overlap-bug",
+  "version": "1.0.0",
+  "description": "A minimal Electron application to demonstrate a bug where two non-resizable windows overlap when placed side by side.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "1.6.11"
+  }
+}
